@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- Begin emoji-picker Stylesheets -->
-<link href="../lib/css/emoji.css" rel="stylesheet">
+<link href="lib/css/emoji.css" rel="stylesheet">
 <!-- End emoji-picker Stylesheets -->
 </head>
 <body>
@@ -26,7 +26,7 @@
 
 <div id="navbar" href="javascript:void(0)">
  <ul>
-   <li><a class="active">Menu</a></li>
+   <li><a class="menu">Menu</a></li>
    <li><a href="#about">About Carmela</a></li>
    <li><a href="#photos">Photos of Carmela</a></li>
    <li><a href="#playlist">Carmela's Playlist</a></li>
@@ -242,24 +242,24 @@ Your browser does not support the audio element.
 </p>
 <p>
 <p class=contact> שאלה 2</p>
-<table border="1" align=center cellpadding=10 cellspacing="0" bordercolor="#111111" width="100%">
- <tr>
-   <td width="25%">WEB TYPES</td>
-   <td width="25%">Web1</td>
-   <td width="25%">Web2</td>
-   <td width="25%">Web3</td>
- </tr>
- <tr>
-   <td width="25%">הכנסת שם של ישות, כמו Elon Musk</td>
-   <td width="25%">נקבל פרטים על הישות (רק קריאה אודות הישות)</td>
-   <td width="25%">נקבל מידע על הישות ואפשרות לדבר עם איתו, במידה וקיימים הפרטים. ניתן לשלוח מייל, או לשוחח איתו בצ'אט.</td>
-   <td width="25%">תוך כדי התקשרות עם האדם, נאסף מידע על השאילתא באמצעות בינה מלאכותית ונעשה עם זה שימוש בפעמים הבאות</td>
- </tr>
-
-
-
-</table>
-
+<div align=center>
+  <p>
+  מקרה:  הכנסת שם של ישות כמו Elon Musk 
+  <br />
+  <br />
+  Web1
+  <br />
+  נקבל פרטים על הישות (רק קריאה אודות הישות)
+  <br />
+  Web2
+  <br />
+  נקבל מידע על הישות ואפשרות לדבר עם איתו, במידה וקיימים הפרטים. ניתן לשלוח מייל, או לשוחח איתו בצ'אט
+  <br />
+  Web3
+  <br />
+  תוך כדי התקשרות עם האדם, נאסף מידע על השאילתא באמצעות בינה מלאכותית ונעשה עם זה שימוש בפעמים הבאות
+</div>
+</p>
 </div>
 <br/>
 <br/>
@@ -267,7 +267,7 @@ Your browser does not support the audio element.
 </section>
 
 <section id="contact" class="contact">
-<h1 align=center id="H2" class="font1" >Contact me</h1>
+<h1 align=center class="font1" >Contact me</h1>
 <div align=center>
 
 <form action="mailto:nivq@post.bgu.ac.il" method="post" enctype="text/plain" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
@@ -286,7 +286,7 @@ Your browser does not support the audio element.
             <tr>
               <th style="width: 20%;"> <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div> </th>
               <th style="width: 80%;">  <p class="lead emoji-picker-container">
-                <input type="email" name="Email" class="form-control" placeholder="Email" required>
+                <input type="email" name="Email" class="form-control" placeholder="Email" data required>
               </p> </th>   
             </tr>
             <tr>
@@ -314,10 +314,10 @@ Your browser does not support the audio element.
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
     <!-- Begin emoji-picker JavaScript -->
-    <script src="../lib/js/config.js"></script>
-    <script src="../lib/js/util.js"></script>
-    <script src="../lib/js/jquery.emojiarea.js"></script>
-    <script src="../lib/js/emoji-picker.js"></script>
+    <script src="lib/js/config.js"></script>
+    <script src="lib/js/util.js"></script>
+    <script src="lib/js/jquery.emojiarea.js"></script>
+    <script src="lib/js/emoji-picker.js"></script>
     <!-- End emoji-picker JavaScript -->
 
 
@@ -326,7 +326,7 @@ Your browser does not support the audio element.
         // Initializes and creates emoji set from sprite sheet
         window.emojiPicker = new EmojiPicker({
           emojiable_selector: '[data-emojiable=true]',
-          assetsPath: '../lib/img/',
+          assetsPath: 'lib/img/',
           popupButtonClasses: 'fa fa-smile-o'
         });
         // Finds all elements with `emojiable_selector` and converts them to rich emoji input fields
@@ -368,9 +368,9 @@ $(function(){
  
  function myFunction() {
    if (window.pageYOffset >= sticky) {
-     navbar.classList.add("sticky")
+     navbar.classList.add("navb")
    } else {
-     navbar.classList.remove("sticky");
+     navbar.classList.remove("navb");
    }
  }
  </script>
