@@ -7,7 +7,7 @@
     border-radius: 0px;
 }
 body{
-    
+    zoom: 0.85;
     background-image: url("back2.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
