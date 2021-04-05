@@ -3,9 +3,7 @@
     background-color: #cccccc;
     background-image: radial-gradient(rgb(238, 82, 82), rgb(255, 255, 255));
 }
-#H2{
-    border-radius: 0px;
-}
+
 body{
     zoom: 0.85;
     background-image: url("back2.jpg");
@@ -30,7 +28,6 @@ h1 {
     font-family: "Lucida", "Brush Script MT", cursive;
     border-radius: 20px;
     font-size:  25px;
-
 }
 .font1{
     font-family: "Lucida", "Brush Script MT", monospace;
@@ -51,51 +48,49 @@ ul {
     background-color: cornflowerblue;
 }
 
-    li {
+.menu {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: block;
+    padding: 25px 22px;
+}
+
+li {
     float: left;
 }
 
-    li a {
-    display: block;
+li a {
+    text-decoration: none;
     color: rgb(82, 82, 109);
     text-align: center;
+    display: block;
     padding: 25px 22px;
-    text-decoration: none;
     font-size: 23px;
     font-weight: bold;
-
 }
 
-    li a:hover {
+li a:hover {
     background-color: rgb(184, 134, 134);
 }
-    .active {
-        display: block;
-        color: rgb(255, 255, 255);
-        text-align: center;
-        padding: 25px 22px;
-        text-decoration: none;        
-}
-.sticky {
-  position: fixed;
+
+.navb {
+  width: 100%;  
   top: 0;
-  width: 100%;
+  position: fixed;
 }
 
-.sticky + .content {
+.navb + .content {
   padding-top: 70px;
 }
-p{
-    
-    font-size:  35px;
-    color:rgb(82, 82, 109);
+
+p{    
     font-family: "Ariel", cursive, sans-serif;
-}
-p.contact{
-    font-size:  35px;
     color:rgb(82, 82, 109);
-    font-family: "Ariel", cursive, sans-serif;
+    font-size:  35px;
 }
+
+
 table{
     font-size:  35px;
     color:rgb(82, 82, 109);
@@ -111,10 +106,12 @@ input {
     cursor: pointer;
 }
 
+p.contact{
+    font-family: "Ariel", cursive, sans-serif;
+    color:rgb(82, 82, 109);
+    font-size:  35px;
+}
 
 input:hover {
     background-color: #aeceaf;
 }
-
-
-
